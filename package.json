@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build:css": "node node_modules/tailwindcss/lib/cli.js -i ./src/styles/tailwind.css -o ./src/public/css/style.css --watch"
   },
   "repository": {
     "type": "git",

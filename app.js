@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.render('home', {
+    res.render('/public/home', { 
         pageTitle: 'Portfólio de Engenharia de Software'
     });
 });
